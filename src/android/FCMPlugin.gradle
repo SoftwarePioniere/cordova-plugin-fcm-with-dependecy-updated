@@ -23,11 +23,8 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        jcenter()
         mavenLocal()
-        if (gradleNumberVersion >= 3.4f) {
-            google()
-        }
+        google()
     }
     dependencies {
         // Load system enviroment defined values, or, if unavailable, plugin defaults
@@ -60,10 +57,7 @@ buildscript {
 }
 repositories {
     mavenCentral()
-    jcenter()
-    if (gradleNumberVersion >= 3.4f) {
-        google()
-    }
+    google()
 }
 dependencies {
     // Load system enviroment defined values, or, if unavailable, plugin defaults
